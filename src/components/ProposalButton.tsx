@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
 import confetti from "canvas-confetti";
+import { LoveRoulette } from "./LoveRoulette";
 
 export const ProposalButton = () => {
   const [answered, setAnswered] = useState(false);
@@ -34,6 +35,7 @@ export const ProposalButton = () => {
           Yes 💝
         </Button>
       )}
+      <LoveRoulette isVisible={answered} />
     </div>
   );
 };
