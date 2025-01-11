@@ -1,6 +1,7 @@
 import { ProposalMessage } from "@/components/ProposalMessage";
 import { PhotoGallery } from "@/components/PhotoGallery";
 import { ProposalButton } from "@/components/ProposalButton";
+import { MemoryGame } from "@/components/MemoryGame";
 
 const Index = () => {
   return (
@@ -20,6 +21,13 @@ const Index = () => {
               Our Beautiful Memories
             </h2>
             <PhotoGallery />
+          </section>
+          
+          <section className="fade-in">
+            <h2 className="romantic-text text-3xl text-center text-pink-600 mb-8">
+              A Little Game For You
+            </h2>
+            <MemoryGame />
           </section>
           
           <section className="py-12 fade-in">
